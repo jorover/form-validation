@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/main.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="overlay">  </div>
+
+        <header class="sign-in-up">
+            <button type="button" class="sign-btn sign-in"> SIGN IN </button>
+            <button type="button" class="sign-btn sign-up"> SIGN UP </button>
+        </header>
+
+
+        <form class="form-content">
+            <div class="sign-in-form">
+                <div class="form-control">
+                    <label for="html"> Username </label>
+                    <input type="text" class="sign-in-details username" placeholder="Enter your username">
+                    <small class="error-text"> Username can not be blank and must be more than three characters </small>
+                </div>
+
+                <div class="form-control">
+                    <label for="html"> Password </label>
+                    <input type="password" class="sign-in-details password" placeholder="Enter your password">
+                    <small class="error-text"> Password can not be blank and must be at least 6 characters </small>
+                </div>
+            </div>
+
+            <div class="sign-up-form">
+                <div class="form-control">
+                    <label for="html"> Enter Email </label>
+                    <input type="email" class="sign-up-details email" placeholder="Enter your email">
+                    <small class="error-text"> Kindly enter your email address </small>
+                </div>
+
+
+                <div class="form-control">
+                    <label for="html"> Username </label>
+                    <input type="text" class="sign-up-details username" placeholder="Enter your username">
+                    <small class="error-text"> Username can not be blank and must be more than three characters </small>
+                </div>
+
+                <div class="form-control">
+                    <label for="html"> Password </label>
+                    <input type="password" class="sign-up-details password" placeholder="Enter your password">
+                    <small class="error-text"> Password can not be blank and must be at least 6 characters </small>
+                </div>
+
+                <div class="form-control">
+                    <label for="html"> Confirm Password </label>
+                    <input type="password" class="sign-up-details password" placeholder="Enter your password">
+                    <small class="error-text"> Password can not be blank and must be at least 6 characters </small>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn"> SIGN IN </button>
+
+        </form>
+    </div>
+
+
+
+<script src="./src/main.js"></script>   
+</body>
+</html>

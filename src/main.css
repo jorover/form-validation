@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffe0ab;
+  width: 100vw;
+  height: 100vh;
+}
+
+.form-container {
+  width: 40%;
+  min-height: 600px;
+  margin: 20px auto;
+  background: url('/bg.jpg') no-repeat center center/cover;
+  border-radius: 30px;
+  color: #fff;
+  position: relative;
+}
+
+.overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: inherit;
+  background: #000;
+  opacity: 0.6;
+  border-radius: inherit;
+}
+
+.sign-in-up,
+.form-content {
+  position: absolute;
+  padding: 20px;
+}
+
+.sign-in-up {
+  top: 30px;
+}
+
+.form-content {
+  top: 120px;
+  height: 300px;
+}
+
+.sign-in-up {
+  width: 100%;
+  height: auto;
+}
+
+.sign-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.sign-btn,
+.submit-btn {
+  cursor: pointer;
+}
+
+.sign-up {
+  margin-left: 10px;
+}
+
+.sign-up,
+label {
+  color: rgb(168, 168, 168);
+}
+
+.form-content,
+.sign-in-form,
+.form-control,
+.submit-btn {
+  width: 100%;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+input {
+  background: rgb(168, 168, 168);
+}
+
+input,
+.submit-btn {
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.accepted input {
+  border: 1px solid rgb(97, 255, 76);
+}
+
+.rejected input {
+  border: 1px solid rgb(255, 76, 76);
+}
+
+.sign-in-form,
+.form-switch .sign-up-form,
+.error-message .error-text {
+  display: block;
+}
+
+.sign-up-form,
+.form-switch .sign-in-form,
+.error-text {
+  display: none;
+}
+
+.sign-in-form {
+  margin-bottom: 10px;
+}
+
+.sign-up-form {
+  margin-bottom: 5px;
+  transform: translateY(-20px);
+}
+
+label {
+  margin-bottom: 7px;
+}
+
+label,
+.error-text {
+  margin-left: 10px;
+}
+
+.error-text {
+  color: rgb(255, 0, 0);
+}
+
+.submit-btn {
+  background: #ffd489;
+  margin: 30px 0px;
+}
+
+@media (max-width: 1050px) {
+  .form-container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 700px) {
+  .form-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  input,
+  .submit-btn {
+    padding: 7px;
+  }
+}
+
+@media (max-width: 470px) {
+  .form-container {
+    width: 90%;
+  }
+}
